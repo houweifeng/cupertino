@@ -29,6 +29,9 @@ $ ios login
 
 _Credentials are saved in the Keychain. You will not be prompted for your username or password by commands while you are logged in. (Mac only)_
 
+Alternatively, username and password can also be provided by setting the
+`IOS_USERNAME` and `IOS_PASSWORD` environment variables respectively.
+
 ### Devices
 
 ```
@@ -164,6 +167,21 @@ The following commands will format their output as [comma-separated values](http
 - `certificates:list`
 - `certificates:download`
 - `app_ids:list`
+
+## Options
+
+Global options:
+
+- `-u` : Username
+- `-p` : Password
+- `--team` : Team Identifier
+- `--info` : Set log level to INFO
+- `--debug` : Set log level to DEBUG
+- `--format` : Output options are `table` or `csv` 
+
+Specific options for certain commands:
+
+- `--type` : Options are `development` or `distribution`
 
 ## Proxies
 
